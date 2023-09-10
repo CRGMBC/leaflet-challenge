@@ -3,8 +3,7 @@ let queryUrl = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_we
 
 // Perform a GET request to the query URL (Mon4thSep activity10)
 d3.json(queryUrl).then(function(data) {
-    // Once we get a response, send the data.features object to the createFeatures function 
-    //(Mon4thSep activity10).
+    // Once we get a response, send the data.features object to the createFeatures function (Mon4thSep activity10).
     createFeatures(data.features);
   });
 
